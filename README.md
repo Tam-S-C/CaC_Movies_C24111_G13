@@ -8,7 +8,7 @@ Codo a Codo
 > Comisión: 24111
 
 > Grupo 13 - Integrantes:
->> PONCE Claudia
->> CANZOBRE Tamara
->> ZALAZAR GOMEZ Alejandro
->> FERNANDEZ Emanuel
+- PONCE Claudia
+- CANZOBRE Tamara
+- ZALAZAR GOMEZ Alejandro
+- FERNANDEZ Emanuel
