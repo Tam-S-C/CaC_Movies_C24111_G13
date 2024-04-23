@@ -181,7 +181,7 @@ body{
                 margin: 10px 1px;
                 outline: none;
                 padding: 0px 20px;
-                width: 400px;
+                width: 380px;
             }
             .botonBuscador{
                 background-color:#8A2BE2;
@@ -265,7 +265,9 @@ body{
         cursor: pointer;
     }
 }
-/* RESPONSIVE: FOOTER Mobile y Tablet */
+
+
+/* RESPONSIVE: FOOTER y BUSCADOR Mobile y Tablet */
 
 @media (max-width: 768px) {
     .footer{
@@ -288,5 +290,8 @@ body{
                 }
             }
         }
+    }
+    .buscadorPeliculas{
+        width: 150px;
     }
 }
