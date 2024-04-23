@@ -12,3 +12,5 @@ Codo a Codo
 - CANZOBRE Tamara
 - ZALAZAR GOMEZ Alejandro
 - FERNANDEZ Emanuel
+
+- Deploy: https://tam-s-c.github.io/CaC_Movies_C24111_G13/
