@@ -2,8 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Calibri", sans-serif;
 }
+
+/* Shake del titulo */
+
+@keyframes tilt-n-move-shaking {
+0% { transform: translate(0, 0) rotate(0deg); }
+25% { transform: translate(5px, 5px) rotate(5deg); }
+50% { transform: translate(0, 0) rotate(0eg); }
+75% { transform: translate(-5px, 5px) rotate(-5deg); }
+100% { transform: translate(0, 0) rotate(0deg); }
+}
+
 
 body{
     background-color: #181419;
@@ -32,6 +43,9 @@ body{
             color: white;
             font-weight: 700;
             font-size: 1.3rem;
+            &:hover{
+                animation: tilt-n-move-shaking 0.25s infinite;
+            }
         }
 
         .listaNav{
@@ -73,6 +87,7 @@ body{
         }
     }
 }
+
 
 /* RESPONSIVE: HEADER para mobile y tablet */
 
@@ -125,7 +140,7 @@ body{
         text-align: center;
 
         .tituloPrincipal{
-            font-size: 4rem;
+            font-size: 3.4rem;
             font-weight: 700;
             margin-bottom: 1rem;
         }
@@ -219,7 +234,28 @@ body{
     }
 }
 
+hr{
+    border: 1px solid #8A2BE2;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
+
+/* TENDENCIAS */
+
+.peliculasTendencia{
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+
+    .tituloSection{
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+}
 
 /* FOOTER */
 
@@ -240,34 +276,68 @@ body{
         width: 100%;
 
         .listaItem{
-            margin-left:25px;
+            margin-left:10px;
 
             .linkNav{
                 text-decoration: none;
                 color:white;
                 font-weight: 600;
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
 
             .administradorPeliculas{
                 background-color: #181419;
                 color: white;
-                padding: 0.5rem 1rem;
+                padding: 0.4rem 0.8rem;
                 border-radius: 5px;
             }
         }
     }
     .flechaArriba{
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: 15px;
+        right: 15px;
         color: white;
         cursor: pointer;
     }
 }
 
+#derechosReservados{
+    font-weight: 200;
+    font-size: 14px;
+}
+
 
 /* RESPONSIVE: FOOTER y BUSCADOR Mobile y Tablet */
+
+/*Responsive intermedio para que no se acoplen los textos del footer*/
+@media (max-width: 900px) {
+    #derechosReservados{
+        font-weight: 100;
+        font-size: 12px;
+    }
+    .footer{
+        height: initial;
+        padding-top:15px;
+        padding-bottom: 20px;
+
+        .listaNav{
+            flex-direction: row;
+            row-gap: 10px;
+
+            .listaItem{
+                
+                .linkNav{
+                    font-size: 0.8rem;
+                }
+
+                .administradorPeliculas{
+                    padding: 0.4rem 0.7rem;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 768px) {
     .footer{
@@ -277,7 +347,7 @@ body{
 
         .listaNav{
             flex-direction: column;
-            row-gap: 15px;
+            row-gap: 10px;
 
             .listaItem{
                 
@@ -286,7 +356,7 @@ body{
                 }
 
                 .administradorPeliculas{
-                    padding: 0.5rem 0.8rem;
+                    padding: 0.4rem 0.7rem;
                 }
             }
         }
