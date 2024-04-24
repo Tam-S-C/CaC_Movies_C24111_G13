@@ -124,7 +124,7 @@ body{
     }
 }
 
-/* MAIN TITULOS Y BUSCADOR */
+/* MAIN TITULOS PRINCIPALES Y BUSCADOR */
 
 .main{
     .sectionPrincipal{
@@ -144,19 +144,22 @@ body{
             font-weight: 700;
             margin-bottom: 1rem;
         }
+
         .subtituloPrincipal{
             font-size: 2.2rem;
             font-weight: 400;
             margin-bottom: 1rem;
         }
-        .botonRegistrarse{
+
+        .botonRegistrarse{   /*SE IGUALÓ EL STYLE DEL BOTÓN CON BUSCAR, ANTERIOR Y SIGUIENTE PARA QUE HAYA MÁS UNIFORMIDAD DE ESTILOS*/
             background-color:#8A2BE2;
             color: white;
-            padding: 1rem;
-            border-radius: 5px;
+            padding: 1rem 1.5rem;
+            border-radius: 25px;
             font-size: 1.2rem;
             font-weight: 700;
             text-decoration: none;
+            border: 2px solid white; 
 
             transition: transform 0.3s, box-shadow 0.3s;
             &:hover {
@@ -166,10 +169,13 @@ body{
             }
         }
     }
+
+/*BUSCADOR Y ORDENAR */
+
     .buscadorPrincipal{
         background-color: #181419;
         color:white;
-        height: 60vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -198,18 +204,20 @@ body{
                 padding: 0px 20px;
                 width: 380px;
             }
+            
             .botonBuscador{
                 background-color:#8A2BE2;
                 display: inline-block;
                 color: white;
                 height: 40px;
-                margin: 20px 10px;
+                margin: 10px 10px;
                 padding:0 20px;
                 border-radius: 25px;
                 font-size: 1.2rem;
                 font-weight: 700;
                 border: 2px solid white;
                 text-align: center;
+
                 transition: transform 0.3s, box-shadow 0.3s;
                 &:hover {
                     background-color: #8A2BE2;
@@ -229,7 +237,7 @@ body{
         justify-content: center;
         align-items: center;
         border-radius: 25px;
-        height: 30px;
+        height: 40px;
         border: 2px solid white;
         outline: none;
         padding: 0px 20px;
@@ -247,108 +255,107 @@ hr{
 
 /* TENDENCIAS */
 
-.main{ 
-    .peliculasTendencia{
+.main{
+        .peliculasTendencia{
         width:80%;
         margin: 0 auto;
         text-align: center;
         margin-top: 10px;
-
+        
         .tituloSection{
             font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 40px;
         }
 
-/* FOTOS PELICULAS */
+        .peliculas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:60px;
 
-    .peliculas {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap:60px;
+            a{
+                text-decoration: none;
+                color: white;
 
-    a {
-        text-decoration: none;
-        color: white;
+                .pelicula{
+                    width:200px;
+                    height: 300px;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    transition: all 0.5s ease;
+                
+                    .imgTendencia{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                
+                    .tituloPelicula{
+                        z-index: 2;
+                        position: absolute;
+                        text-align: center;
+                        top: 50%;
+                        left: 50%;
+                        max-width: 20rem;
+                        width: 100%;
+                        transform: translateY(-50%) translateX(-50%);
 
-        .pelicula {
-            width:200px;
-            height: 300px;
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            transition: all 0.5s ease;
-        
-            .imgTendencia {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-            }
-        
-            .tituloPelicula {
-                z-index: 2;
-                position: absolute;
-                text-align: center;
-                top: 50%;
-                left: 50%;
-                max-width: 20rem;
-                width: 100%;
-                transform: translateY(-50%) translateX(-50%);
+                        h4 {
+                            font-size: 1.6rem;
+                            font-weight: bold;
+                            opacity: 0;
+                            margin-bottom: 0.5rem;
+                            letter-spacing: 0.1rem;
+                            transition: opacity 0.5s ease-in-out;
+                        }
+                    }
+                    &:hover{
+                    box-shadow: 0 0 30px #8A2BE2;
+                    transform: scale(0.9);
+                    
+                    }
+                    &:hover .tituloPelicula{
+                        width: 100%;
+                        height: 100%;
+                        backdrop-filter: blur(20px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
 
-                h4 {
-                    font-size: 2rem;
-                    font-weight: bold;
-                    opacity: 0;
-                    margin-bottom: 0.5rem;
-                    letter-spacing: 0.1rem;
-                    transition: opacity 0.5s ease-in-out;
+                    &:hover h4 {
+                        width: 100%;
+                        padding: 0.5rem;
+                        opacity: 1;
+                    }
                 }
-            }
-
-            &:hover{
-            box-shadow: 0 0 30px #8A2BE2cd;
-            transform: scale(1.1);
-            }
-
-            &:hover h4 {
-            opacity: 1;
-            }
-
-            &:hover::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-                background-color: #8A2BE2;
-                z-index: 1;
             }
         }
-    }
-}
 
-    .boton{
-        background-color:#8A2BE2;
-                display: inline-block;
-                color: white;
-                height: 40px;
-                margin: 20px 10px;
-                padding:0 20px;
-                border-radius: 25px;
-                font-size: 1.2rem;
-                font-weight: 700;
-                border: 2px solid white;
-                text-align: center;
-                transition: transform 0.3s, box-shadow 0.3s;
-                &:hover {
-                    background-color: #8A2BE2;
-                    transform: scale(0.95);
-                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-                }
+        .boton{
+            border: 2px solid white;
+            box-sizing: content-box;
+            margin-top: 50px;
+            margin-left: 20px;
+            background-color:#8A2BE2;
+            color: #ffffff;
+            padding: 0.8rem 1rem;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            margin-bottom: 60px;
+
+            transition: transform 0.3s, box-shadow 0.3s;
+            &:hover {
+                background-color: #8A2BE2;
+                transform: scale(0.95);
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
         }
     }
 }
@@ -364,7 +371,7 @@ hr{
         margin-bottom:60px;
 
         .tituloSection{
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 40px;
         }
