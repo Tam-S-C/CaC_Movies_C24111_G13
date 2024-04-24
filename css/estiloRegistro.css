@@ -183,149 +183,28 @@ body{
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
 }
-/* FOOTER */
 
-.footer{
-    background-color:#8A2BE2;
-    color:#ffffff;
-    height: 10vh;
-    display: flex;
-    position:absolute;
-    justify-content:center;
-    align-items: center;
-    bottom: 0px;
-    width: 100%;
+/* RESPONSIVE */
 
-    .listaNav{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        width: 100%;
-
-        .listaItem{
-            margin-left:15px;
-
-            .linkNav{
-                text-decoration: none;
-                color:white;
-                font-weight: 600;
-                font-size: 1rem;
-            }
-
-            .administradorPeliculas{
-                background-color: #181419;
-                color: white;
-                padding: 0.4rem 0.8rem;
-                border-radius: 5px;
-            }
-        }
-    }
-    .flechaArriba{
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-        color: white;
-        cursor: pointer;
-    }
-}
-
-#derechosReservados{
-    font-weight: 200;
-    font-size: 14px;
-}
-
-
-/* RESPONSIVE: Titulos, FOOTER , BUSCADOR, MAIN Mobile y Tablet */
-
-/*Responsive intermedio para que no se acoplen los textos del footer*/
-@media (max-width: 900px) {
-    #derechosReservados{
-        font-weight: 100;
-        font-size: 12px;
-    }
-    .footer{
-        height: initial;
-        padding-top:15px;
-        padding-bottom: 20px;
-
-        .listaNav{
-            flex-direction: row;
-            row-gap: 10px;
-
-            .listaItem{
-                
-                .linkNav{
-                    font-size: 0.8rem;
-                }
-
-                .administradorPeliculas{
-                    padding: 0.4rem 0.7rem;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
 
 .main{
-    .sectionPrincipal{ 
+    margin-top: 100px;
+}
+}
 
-        .tituloPrincipal{
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            }
+@media (max-width: 820px) {
 
-        .subtituloPrincipal{
-            font-size: 2rem;
-            font-weight: 400;
-            margin-bottom: 1rem;
-        }
+    .main{
+        margin-top: 150px;
     }
-    .peliculas{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     
-        a{
-        width: 100%;
-            .pelicula{
-                width: 100%;
-                height: 500px;
-            
-                .tituloPelicula{
-                    h4 {
-                        font-size: 1rem;
-                    }
-                }
-            }
+    }
+
+    @media (max-width: 600px) {
+
+        .main{
+            margin-top: 200px;
         }
-    }
-}
-
-    .footer{
-        height: initial;
-        padding-top:15px;
-        padding-bottom: 20px;
-
-        .listaNav{
-            flex-direction: column;
-            row-gap: 10px;
-
-            .listaItem{
-                
-                .linkNav{
-                    font-size: 1rem;
-                }
-
-                .administradorPeliculas{
-                    padding: 0.4rem 0.7rem;
-                }
-            }
+        
         }
-    }
-    .buscadorPeliculas{
-        width: 150px;
-    }
-}
