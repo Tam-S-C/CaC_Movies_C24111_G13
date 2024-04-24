@@ -397,8 +397,8 @@ hr{
             
                 .imgAclamada{
                     border-radius: 5%;
-                    width: 95%;
-                    height: 95%;
+                    width: 150px;
+                    height: 250px;
                     object-fit: cover;
                 }   
             }    
