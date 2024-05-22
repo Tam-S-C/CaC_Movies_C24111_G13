@@ -6,7 +6,7 @@
 }
 
 .mainDetalle{
-    margin: auto;
+    margin: 1em 3em;
 }
 
 .textoDetalle h1 {
@@ -374,6 +374,9 @@ hr{
 }
 
 @media (max-width: 768px) {
+    iframe{
+        witdh: 300px;
+    }
     .footer{
         height: initial;
         padding-top:15px;
