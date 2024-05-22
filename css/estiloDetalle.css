@@ -346,6 +346,9 @@ hr{
 
 /*Responsive intermedio para que no se acoplen los textos del footer*/
 @media (max-width: 900px) {
+     iframe{
+        witdh: 350px;
+    }
     #derechosReservados{
         font-weight: 100;
         font-size: 12px;
@@ -375,7 +378,7 @@ hr{
 
 @media (max-width: 768px) {
     iframe{
-        witdh: 300px;
+        witdh: 250px;
     }
     .footer{
         height: initial;
