@@ -5,6 +5,10 @@
     font-family: "Calibri", sans-serif;
 }
 
+.mainDetalle{
+    margin: auto;
+}
+
 .textoDetalle h1 {
     text-decoration: none;
     color: white;
