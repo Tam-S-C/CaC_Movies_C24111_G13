@@ -78,10 +78,10 @@ function validarCampo(campoId,mensaje){
         event.preventDefault();
         if(!validarFormulario()){
             event.preventDefault();
-            console.log("El formulario no es valido");
+            console.log("El formulario no es válido");
         }else{
             event.preventDefault();
-            console.log("El formulario es valido.");
+            console.log("El formulario es válido.");
         }
     })
 })
