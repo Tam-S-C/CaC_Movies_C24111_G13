@@ -82,7 +82,7 @@ body{
 /* FORMULARIO DE REGISTRO */
 .main{
     background-color: #181419;
-        color:white;
+        color: white;
         height: 50vh;
         display: flex;
         flex-direction: column;
@@ -90,12 +90,12 @@ body{
         align-items: center;
         height: 40vw;
         
-        input#email,#password:not(.check,.boton),select{
+        input #email, #password:not(.check,.boton),select{
             width: 100%;
            margin-bottom: 10px;
            height: 40px;
            padding: 0px 50px;
-           font-size: 1.2rem;
+           font-size: 0.9em;
            border-radius: 20px;
            border: 2px solid #8a3644;
            background-color: #fff;
