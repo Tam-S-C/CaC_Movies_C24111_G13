@@ -90,7 +90,7 @@ body{
         align-items: center;
         height: 40vw;
         
-        input #email, #password:not(.check,.boton),select{
+        #email, #password{
             width: 100%;
            margin-bottom: 10px;
            height: 40px;
