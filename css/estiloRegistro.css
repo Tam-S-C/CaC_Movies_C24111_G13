@@ -21,6 +21,97 @@ body{
     color:white; 
 }
 
+/* FORMULARIO DE REGISTRO */
+.main{
+    background-color: #181419;
+        color:white;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vw;
+}
+
+.tituloRegistrarse{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+
+.barraRegistro{
+    border: 2px solid white;
+    border-radius: 25px;
+    color: black;
+    font-size: 1rem;
+    height: 40px;
+    margin: 10px 1px;
+    outline: none;
+    padding: 0px 20px;
+    width: 380px;
+}
+
+.botonRegistro{
+    background-color:#8A2BE2;
+    display: inline-block;
+    color: white;
+    height: 40px;
+    margin: 10px 10px;
+    padding:0 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid white;
+    text-align: center;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+        background-color: #8A2BE2;
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1400px) {
+
+.main{
+    margin-top: 100px;
+}
+}
+
+@media (max-width: 820px) {
+
+    .main{
+        margin-top: 150px;
+    }
+    
+    }
+
+    @media (max-width: 600px) {
+
+        .main{
+            margin-top: 200px;
+        }
+        .tituloRegistrarse{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+        
+        }
+
+
 /* Header */
 
 .header{
@@ -123,93 +214,3 @@ body{
         }
     }
 }
-
-/* FORMULARIO DE REGISTRO */
-.main{
-    background-color: #181419;
-        color:white;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 40vw;
-}
-
-.tituloRegistrarse{
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 0.3rem;
-}
-
-.formulario{
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.3rem;
-}
-
-.barraRegistro{
-    border: 2px solid white;
-    border-radius: 25px;
-    color: black;
-    font-size: 1rem;
-    height: 40px;
-    margin: 10px 1px;
-    outline: none;
-    padding: 0px 20px;
-    width: 380px;
-}
-
-.botonRegistro{
-    background-color:#8A2BE2;
-    display: inline-block;
-    color: white;
-    height: 40px;
-    margin: 10px 10px;
-    padding:0 20px;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border: 2px solid white;
-    text-align: center;
-
-    transition: transform 0.3s, box-shadow 0.3s;
-    &:hover {
-        background-color: #8A2BE2;
-        transform: scale(0.95);
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    }
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 1400px) {
-
-.main{
-    margin-top: 100px;
-}
-}
-
-@media (max-width: 820px) {
-
-    .main{
-        margin-top: 150px;
-    }
-    
-    }
-
-    @media (max-width: 600px) {
-
-        .main{
-            margin-top: 200px;
-        }
-        .tituloRegistrarse{
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-}
-        
-        }
