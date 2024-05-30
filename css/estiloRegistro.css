@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Calibri", sans-serif;
+}
+
+/* Shake del titulo */
+
+@keyframes tilt-n-move-shaking {
+0% { transform: translate(0, 0) rotate(0deg); }
+25% { transform: translate(5px, 5px) rotate(5deg); }
+50% { transform: translate(0, 0) rotate(0eg); }
+75% { transform: translate(-5px, 5px) rotate(-5deg); }
+100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+
+body{
+    background-color: #181419;
+    color:white; 
+}
+
+/* FORMULARIO DE REGISTRO */
+.main{
+    background-color: #181419;
+        color:white;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vw;
+}
+
+.tituloRegistrarse{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+
+.barraRegistro{
+    border: 2px solid white;
+    border-radius: 25px;
+    color: black;
+    font-size: 1rem;
+    height: 40px;
+    margin: 10px 1px;
+    outline: none;
+    padding: 0px 20px;
+    width: 380px;
+}
+
+.botonRegistro{
+    background-color:#8A2BE2;
+    display: inline-block;
+    color: white;
+    height: 40px;
+    margin: 10px 10px;
+    padding:0 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid white;
+    text-align: center;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+        background-color: #8A2BE2;
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1400px) {
+
+.main{
+    margin-top: 100px;
+}
+}
+
+@media (max-width: 820px) {
+
+    .main{
+        margin-top: 150px;
+    }
+    
+    }
+
+    @media (max-width: 600px) {
+
+        .main{
+            margin-top: 200px;
+        }
+        .tituloRegistrarse{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+        
+        }
+
+
+/* Header */
+
+.header{
+    background-color:#8A2BE2;
+    color:white;
+    position:sticky;
+    top: 0;
+    z-index: 10;
+
+    .navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 1.4rem 0;
+
+        .anclaLogo{
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 1.3rem;
+            &:hover{
+                animation: tilt-n-move-shaking 0.25s infinite;
+            }
+        }
+
+        .listaNav{
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            .listaItem{
+                margin-right: 20px;
+
+                .linkNav{
+                    color:white;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    padding: 0.5rem 1rem;
+
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover{
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgba(35, 0, 40, 0.4);
+                        border-radius: 5px;
+                    }
+                }
+
+                .linkNav.iniciarSesion{
+                    background-color: #181419;
+                    color: white;
+                    border-radius: 5px;
+
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover {
+                        background-color: #8A2BE2;
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgba(35, 0, 40, 0.4);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* RESPONSIVE: HEADER para mobile y tablet */
+
+@media (max-width: 768px) {
+    .header{
+        height: initial;
+
+        .navegacion{
+            margin-left:10px;
+            margin-right: 10px;
+            flex-direction: column;
+            row-gap: 15px;
+
+            .anclaLogo{
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+
+            .listaNav{
+                padding:initial;
+
+                .listaItem{
+                    
+                    .linkNav{
+                        font-weight: 300;
+                        margin-right: initial;
+                        font-size: 1rem;
+                        padding: 0.2rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

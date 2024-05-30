@@ -1,0 +1,24 @@
+.vscode/
+3D Objects/
+AppData/
+Contacts/
+Creative Cloud Files Personal Account/
+Documents/
+Downloads/
+Favorites/
+IntelGraphicsProfiles/
+Links/
+MicrosoftEdgeBackups/
+Music/
+NTUSER.DAT*
+OneDrive/
+Pictures/
+Saved Games/
+Searches/
+Sti_Trace.log
+Videos/
+eclipse-workspace/
+eclipse/
+ntuser.*
+pseint/
+source/
