@@ -52,7 +52,7 @@ function validarCampo(campoId,mensaje){
     function validarEmail(campoId,mensaje){
         const campo = document.getElementById(campoId);
         const email = campo.value.trim();
-        if (email == ' '){
+        if (email == ''){
             mostrarError(campo, 'El correo electronico es obligatorio');
             return false;
          }else if(!isEmail(email)){
