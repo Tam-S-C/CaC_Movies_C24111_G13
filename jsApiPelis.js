@@ -24,7 +24,7 @@ function dibujarDatos(json) {
 
 function Pelicula(obj) {
     return `
-      <a href="./pages/detalle.html">
+      <a href="detalle.html">
         <div class="pelicula">
           <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500/${obj.poster_path}" alt="${obj.title}" loading="lazy">
           <div class="tituloPelicula">
