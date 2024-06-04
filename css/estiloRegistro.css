@@ -110,16 +110,19 @@ body{
     }
 
     @media (max-width: 600px) {
-
+        .barraRegistro{
+            height: 32px;
+            width: 300px;
+        }
         .main{
-            margin-top: 200px;
+            margin-top: 210px;
         }
         .tituloRegistrarse{
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-}
-        
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+                
         }
 
 
