@@ -76,12 +76,11 @@ function validarCampo(campoId,mensaje){
     // Evento de escucha
     formulario.addEventListener('submit', event =>{
         event.preventDefault();
-        if(!validarFormulario()){
-            event.preventDefault();
+        if (validarFormulario()) {
+            // Si el formulario es válido, redirigir a index.html
+            window.location.href = 'index.html';
+        } else {
             console.log("El formulario no es válido");
-        }else{
-            event.preventDefault();
-            console.log("El formulario es válido.");
         }
     })
 })
