@@ -80,7 +80,7 @@ function validarCampo(campoId,mensaje){
             // Si el formulario es válido, redirigir a index.html
             window.location.href = 'index.html';
         } else {
-            console.log("El formulario no es válido");
+            alert("El formulario no es válido");
         }
     })
 })

@@ -31,6 +31,8 @@ body{
         justify-content: center;
         align-items: center;
         height: 40vw;
+        margin-top: 30px;
+        
 }
 
 .tituloRegistrarse{
@@ -53,7 +55,7 @@ body{
     border-radius: 25px;
     color: black;
     font-size: 1rem;
-    height: 40px;
+    height: 35px;
     margin: 10px 1px;
     outline: none;
     padding: 0px 20px;
@@ -80,6 +82,15 @@ body{
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
 }
+
+.error-text{
+    color: red;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+
 
 /* RESPONSIVE */
 
