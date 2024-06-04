@@ -112,13 +112,13 @@ body{
     @media (max-width: 600px) {
         .barraRegistro{
             height: 32px;
-            width: 300px;
+            width: 260px;
         }
         .main{
-            margin-top: 210px;
+            margin-top: 220px;
         }
         .tituloRegistrarse{
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: 600;
             margin-bottom: 0.2rem;
         }
