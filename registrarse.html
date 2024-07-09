@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/estiloRegistro.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body class="bodyRegistrarse">
@@ -18,14 +19,15 @@
                 <span>CAC-MOVIES-G13</span>
             </a>
             <ul class="listaNav">
-                <li class="listaItem"><a href="index.html" class="linkNav">Inicio</li></a>
-                <li class="listaItem"><a href="inicioSesion.html" class="linkNav iniciarSesion">Iniciar Sesión</li></a>
+                <li class="listaItem"><a href="index.html" class="linkNav">Inicio</a></li>
+                <li class="listaItem"><a href="inicioSesion.html" class="linkNav iniciarSesion">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
-    <main  id="main" class="main">
+    
+    <main id="main" class="main">
         <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
-            <form class="formulario" action="" method="post">
+            <form class="formulario" action="/proyectoJava_24111_G13/registrarse" method="post">
                 <h2 class="tituloRegistrarse">Registro de usuario nuevo</h2>
                 <div>
                     <input class="barraRegistro" type="text" placeholder="Nombre" required id="nombre" name="nombre">
@@ -44,11 +46,7 @@
                     <p class="error-text"></p>
                 </div>
                 <div>
-                    <input class="barraRegistro" type="password" placeholder="Confirmar contraseña" required id="confirmarPassword" name="confirmarPassword">
-                    <p class="error-text"></p>
-                </div>
-                <div>
-                    <input class="barraRegistro" type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" required id="fechaNacimiento" name="fechaNacimiento">
+                    <input class="barraRegistro" type="date" required id="fechaNacimiento" name="fechaNacimiento">
                     <p class="error-text"></p>
                 </div>
                 <div>
@@ -77,14 +75,13 @@
                 </div>
             </form>
         </section>
-        
-    
     </main>
     
-    <script src="validacionRegistro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
+        AOS.init();
     </script>
+    <script src="validacionRegistro.js"></script>
 </body>
 </html>
