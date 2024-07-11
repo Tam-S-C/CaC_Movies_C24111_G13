@@ -13,6 +13,12 @@ Codo a Codo
 - ZALAZAR GOMEZ Alejandro
 - FERNANDEZ Emanuel
 
+VIDEO FINAL BACK END CON JAVA Y SQL
+https://www.youtube.com/watch?v=P35qLZCL3Nw
+
+
+FrontEnd: HTML - CSS - JS
+
 > Deploy: https://tam-s-c.github.io/CaC_Movies_C24111_G13/
 
 > GitHub: https://github.com/Tam-S-C/CaC_Movies_C24111_G13.git
