@@ -13,8 +13,11 @@ Codo a Codo
 - ZALAZAR GOMEZ Alejandro
 - FERNANDEZ Emanuel
 
-VIDEO FINAL BACK END CON JAVA Y SQL
+>>>> VIDEO FINAL BACK END CON JAVA Y SQL
 https://www.youtube.com/watch?v=P35qLZCL3Nw
+
+>>>> Archivos en OneDrive
+https://1drv.ms/f/c/0f32ebdfc0565cb4/EjcaqemHOaxDl-HpBeiiHVABIObvJ-s9DZ-WB_QGVs80lg
 
 
 FrontEnd: HTML - CSS - JS
