@@ -1,11 +1,15 @@
-CaC_Movies_C24111_G13
+<h2>TP - FullStack JAVA</h2>
+CaC_Movies_C24111_G13 // Codo a Codo
 
-TP - FullStack JAVA
-Codo a Codo
+-----
+
+<h3> VIDEO FINAL: BACK END CON JAVA Y SQL</h3>
+https://www.youtube.com/watch?v=P35qLZCL3Nw
+
+-----
 
 > Profesor: Miguel Nefle
-
-> Comisión: 24111
+- Comisión: 24111
 
 > Grupo 13 - Integrantes:
 - PONCE Claudia
@@ -13,19 +17,23 @@ Codo a Codo
 - ZALAZAR GOMEZ Alejandro
 - FERNANDEZ Emanuel
 
->>>> VIDEO FINAL BACK END CON JAVA Y SQL
-https://www.youtube.com/watch?v=P35qLZCL3Nw
+-----
 
->>>> Archivos en OneDrive
+> Archivos en OneDrive
 https://1drv.ms/f/c/0f32ebdfc0565cb4/EjcaqemHOaxDl-HpBeiiHVABIObvJ-s9DZ-WB_QGVs80lg
-
-
-FrontEnd: HTML - CSS - JS
 
 > Deploy: https://tam-s-c.github.io/CaC_Movies_C24111_G13/
 
 > GitHub: https://github.com/Tam-S-C/CaC_Movies_C24111_G13.git
 
+<h3>FrontEnd: HTML - CSS - JS</h3>
+
 + Apis de Pelis
 + Validación con JS en Inicio Sesión
 + Validación con JS en Registro de Usuario
+
+-----
+
+| **Java FullStack** |
+|:--:|
+| ![JavaFullStack](https://media.licdn.com/dms/image/D4D2DAQHsEJOz53NcFw/profile-treasury-document-images_800/1/1724959499116?e=1729123200&v=beta&t=U-gxZO30RhiPXuUiBqc6_YWELaDqMYXJhANOZ4MMxYQ) |
