@@ -32,8 +32,4 @@ https://1drv.ms/f/c/0f32ebdfc0565cb4/EjcaqemHOaxDl-HpBeiiHVABIObvJ-s9DZ-WB_QGVs8
 + Validación con JS en Inicio Sesión
 + Validación con JS en Registro de Usuario
 
------
 
-| **Java FullStack** |
-|:--:|
-| ![JavaFullStack](https://media.licdn.com/dms/image/D4D2DAQHsEJOz53NcFw/profile-treasury-document-images_1280/1/1724959499188?e=1730332800&v=beta&t=A-v0wWT197ZYHXejlKA0Gh_c0O3G71mcoj1NjVq4WZI) |
